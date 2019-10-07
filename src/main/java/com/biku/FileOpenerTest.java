@@ -1,5 +1,9 @@
 package com.biku;
 
+/**
+ * Class to test that FileOpener class work correctly
+ */
+
 import java.io.IOException;
 
 public class FileOpenerTest  {

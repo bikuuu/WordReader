@@ -1,5 +1,9 @@
 package com.biku;
 
+/**
+ * Reader framework
+ */
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,7 +15,7 @@ import javafx.stage.Stage;
 
 public class ReaderFX extends Application {
 
-//    Button loadFile;
+    Button loadFile;
 
     public static void main(String[] args) {
         launch(args);
@@ -21,7 +25,7 @@ public class ReaderFX extends Application {
     public void start(Stage primaryStage) throws Exception{
         primaryStage.setTitle("Word reader form File");
 
-        Button loadFile = new Button("Load File");
+        loadFile = new Button("Load File");
 
 
         StackPane layout = new StackPane();

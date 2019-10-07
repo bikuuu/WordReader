@@ -1,5 +1,7 @@
 package com.biku;
-
+/**
+ * Class to implement method to open file with words
+ */
 
 import java.io.*;
 import java.io.IOException;
