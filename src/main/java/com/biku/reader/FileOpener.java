@@ -1,4 +1,4 @@
-package com.biku;
+package com.biku.reader;
 /**
  * Class to implement method to open file with words
  */

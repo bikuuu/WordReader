@@ -1,4 +1,4 @@
-package com.biku;
+package com.biku.reader;
 
 /**
  * Class with method "read" to return number of words in the longest sentence

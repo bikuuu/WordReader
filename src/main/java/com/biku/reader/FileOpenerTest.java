@@ -1,4 +1,4 @@
-package com.biku;
+package com.biku.reader;
 
 /**
  * Class to test that FileOpener class work correctly

@@ -1,4 +1,4 @@
-package com.biku;
+package com.biku.reader;
 
 /**
  * Reader class test
