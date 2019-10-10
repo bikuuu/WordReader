@@ -1,14 +1,20 @@
 package com.biku.readerFX;
 
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller  {
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    public Button loadFile;
+
+    public void handleButtonClick(){
+
     }
+
+
+
 
 }

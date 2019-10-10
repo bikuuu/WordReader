@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.biku.readerFX.Controller">
 
-    <Label text="I love bacon"/>
-    <Button text="Submit"/>
 
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0"
+      prefWidth="459.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.biku.readerFX.Controller">
+   <children>
+      <Button layoutX="368.0" layoutY="23.0" mnemonicParsing="false" text="Load File" textAlignment="CENTER"
+              fx:id="loadFile" onAction="#handleButtonClick"/>
+      <Label layoutX="15.0" layoutY="23.0" prefHeight="25.0" prefWidth="349.0" style="-fx-background-color: white;"
+             text="File path" textAlignment="JUSTIFY" />
+      <Button layoutX="215.0" layoutY="141.0" mnemonicParsing="false" text="Run" />
+      <Label layoutX="24.0" layoutY="65.0" prefHeight="54.0" prefWidth="332.0"
+             text="The number of words in&#10;the longest sentence: " />
+      <Label layoutX="227.0" layoutY="80.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: white;" />
+   </children>
+</Pane>
