@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="NewModuleRootManager">
+    <output-path>$USER_HOME$/Pobrane/openjfx-13</output-path>
+    <root id="root" />
+  </artifact>
+</component>
