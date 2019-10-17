@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class FileOpener {
 
-    public String OpenFile(String filePath){
+    public static String OpenFile(String filePath){
         String textFromFile = null;
         File openFile = new File(filePath);
         try {
