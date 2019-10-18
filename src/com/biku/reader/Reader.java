@@ -6,7 +6,7 @@ package com.biku.reader;
 
 public class Reader {
 
-    public int read(String s) {
+    public int Read(String s) {
         String tabOfsentence[];                                  // table with separate sentence
         String[] elementsOfSentenceList;                         // Table with separated word
         int maxNumberOfElementsInSentence = 0;
