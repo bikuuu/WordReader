@@ -19,7 +19,6 @@
                     <target>7</target>
                 </configuration>
             </plugin>
-
                 <plugin>
                     <groupId>org.openjfx</groupId>
                     <artifactId>javafx-maven-plugin</artifactId>
@@ -30,7 +29,6 @@
                 </plugin>
         </plugins>
     </build>
-
 
     <dependencies>
         <dependency>
@@ -54,25 +52,9 @@
             <version>0.0.3</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13-beta-2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.5.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>com.cedarsoftware</groupId>
             <artifactId>java-util</artifactId>
             <version>1.8.0</version>
         </dependency>
-
     </dependencies>
-
-
-    
 </project>

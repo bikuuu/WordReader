@@ -12,34 +12,31 @@ public class Reader {
         int maxNumberOfElementsInSentence = 0;
         String splitsMarks = ";|!|\\?|\\.";                      // All splits marks (";" "!" "?" ".")
         String separatorMark = "\\s";                            // Separator mark to separate words
-
         tabOfsentence = s.split(splitsMarks);
-
         /**
          * Loop to separate sentence
          */
-
-        for (String i : tabOfsentence) {
-                int numberOfElementsInSentence = 0;
-
-                elementsOfSentenceList = i.split(separatorMark);
-            /**
-             * sum of all not empty separated elements of sentence
-             */
-
-            for (String j: elementsOfSentenceList) {
-                    if (!j.isEmpty() || !j.equals(""))
-                        numberOfElementsInSentence++;
+        if(tabOfsentence.length > 0 && tabOfsentence[0] != "") {
+            for (String sentence : tabOfsentence) {
+                int numberOfWordInSentence = 0;
+                sentence.replaceAll("[^a-zA-Z]+", "");
+                elementsOfSentenceList = sentence.split(separatorMark);
+                /**
+                 * sum of all not empty separated elements of sentence
+                 */
+                for (String word : elementsOfSentenceList) {
+                    if (!word.isEmpty() || !word.equals(""))
+                        numberOfWordInSentence++;
                 }
-
-            /**
-             * Equale how sentence heve more not empty elements (words)
-             */
-
-                maxNumberOfElementsInSentence = (maxNumberOfElementsInSentence < numberOfElementsInSentence)
-                        ? numberOfElementsInSentence : maxNumberOfElementsInSentence;
+                /**
+                 * Equale how sentence heve more not empty elements (words)
+                 */
+                maxNumberOfElementsInSentence = (maxNumberOfElementsInSentence < numberOfWordInSentence)
+                        ? numberOfWordInSentence : maxNumberOfElementsInSentence;
             }
+        }else {
+            com.biku.readerFX.Alerts.emptyFile();
+        }
         return maxNumberOfElementsInSentence;
     }
-
 }

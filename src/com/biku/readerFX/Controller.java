@@ -2,7 +2,6 @@ package com.biku.readerFX;
 
 import com.biku.reader.FileOpener;
 import com.biku.reader.Reader;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.FileChooser;
@@ -20,8 +19,7 @@ public class Controller  {
     @FXML
     private Button run;
     @FXML
-    private ListView numberOfWords;
-
+    private Label numberOfWords;
     private String filePath;
 
     public void LoadFileButtonClick() throws UnsupportedEncodingException {
@@ -39,17 +37,17 @@ public class Controller  {
         if (selectedFile != null){
            listViewPath.getItems().add(selectedFile.getPath());
         }else{
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("File is not valid");
-            alert.show();
+            Alerts.notValidFile();
         }
     }
 
     public void RunButtonClick(){
-        String fileOpener = new FileOpener().OpenFile(filePath);
-        int read = new Reader().Read(fileOpener);
-        String value = Integer.toString(read);
-        //TODO: Transfer read value to numberOfWords ListView
+            if(filePath != null){
+                String fileOpener = new FileOpener().OpenFile(filePath);
+                int read = new Reader().Read(fileOpener);
+                numberOfWords.setText(Integer.toString(read));
+            }else{
+           Alerts.invalidFilePath();
+        }
     }
 }

@@ -11,6 +11,5 @@ public class TestReader {
         String s = new FileOpener().OpenFile(path);
         int read = new Reader().Read(s);
         System.out.println(read);
-
     }
 }

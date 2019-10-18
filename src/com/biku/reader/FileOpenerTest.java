@@ -12,6 +12,5 @@ public class FileOpenerTest  {
         String path = "/home/biku/Pulpit/tekst.txt";
         String textInsideTxtFile = new FileOpener().OpenFile(path);
         System.out.println(textInsideTxtFile);
-
     }
 }

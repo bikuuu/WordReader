@@ -13,6 +13,6 @@
       <ListView fx:id="listViewPath" layoutX="15.0" layoutY="23.0" prefHeight="25.0" prefWidth="349.0" style="-fx-background-color: white;" />
       <Button fx:id="run" layoutX="215.0" layoutY="141.0" mnemonicParsing="false" onAction="#RunButtonClick" text="Run" />
       <Label layoutX="24.0" layoutY="65.0" prefHeight="54.0" prefWidth="332.0" text="The number of words in&#10;the longest sentence: " />
-      <ListView fx:id="numberOfwords" layoutX="227.0" layoutY="80.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: white;" />
+      <Label fx:id="numberOfWords" alignment="CENTER" contentDisplay="CENTER" layoutX="227.0" layoutY="80.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: white;" />
    </children>
 </Pane>
